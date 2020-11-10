@@ -1,0 +1,16 @@
+
+#!/bin/bash
+
+     linia="k"
+
+     while [ "$linia" = "k" ]
+     do
+
+     echo "Podaj, ktora linie chcesz usunac (numer linii)"
+     read linia
+
+     sed -e "$linia" dane.txt
+
+     echo "Dane (linia) zostaly usuniete"
+
+     done
