@@ -1,0 +1,19 @@
+#!/bin/bash
+
+kon="t"
+
+while [ "$kon" = "t" ]
+        do
+              echo "Podaj nazwisko"
+              read nazwisko
+              echo "Podaj imie"
+              read imie
+              echo "Podaj telefon (+aa-xxx-xxx-xxx)"
+              read telefon
+
+        echo "$nazwisko $imie $telefon" >> dane.txt
+        echo "Nastepujace dane zostaly zapisane: $nazwisko $imie $telefon"
+        echo "Czy chcesz kontynuowac? (t/n):"
+        read kon
+        done
+
