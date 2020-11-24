@@ -15,8 +15,8 @@ then
 
 echo "Podaj adres e-mail, na ktory chcesz wyslac
 wiadomosc"
-read adres e-mail
-e-mail="$adres"
+read adres email
+email="$adres"
 echo "$uzytkownik zalogowany" | mutt -s "$uzytkownik zalogowany" $email
 
 echo "wiadomosc wyslana"
@@ -25,7 +25,7 @@ else
 
 echo "wprowadz adres e-mail, na ktory chcesz wyslac wiadomosc"
 read adres
-e-mail="$adres"
+email="$adres"
 echo "uzytkoenik niezalogowany" | mutt -s "uzytkownik niezalogowany" $email
 
 echo "wiadomosc wyslana"
