@@ -4,7 +4,7 @@ int main()
 
 {
 int a;
-char koniec;
+char koniec='t';
 
 do
 {
@@ -20,15 +20,17 @@ a=a-1;
 }
 printf("wynik silni = %d\n" , silnia);
 
-printf("Czy chcesz kontynuowac?");
+printf("Czy chcesz kontynuowac? tak/nie");
 scanf("%c" , &koniec);
 }
 
-while(koniec=='t');
+while("koniec=='t'");
 
 
 return 0;
 }
+
+
 
 
 
